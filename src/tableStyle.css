@@ -1,0 +1,2 @@
+tbody {height: 500px; display: block; overflow-y: scroll;}
+thead,tr {display:table; width:100%;table-layout:fixed;}       
