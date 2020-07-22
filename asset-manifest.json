@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kmagdi/reactCovid.git/static/css/main.5f361e03.chunk.css",
+    "main.js": "/kmagdi/reactCovid.git/static/js/main.bc460fbc.chunk.js",
+    "main.js.map": "/kmagdi/reactCovid.git/static/js/main.bc460fbc.chunk.js.map",
+    "runtime-main.js": "/kmagdi/reactCovid.git/static/js/runtime-main.f5467a18.js",
+    "runtime-main.js.map": "/kmagdi/reactCovid.git/static/js/runtime-main.f5467a18.js.map",
+    "static/js/2.ce5236d9.chunk.js": "/kmagdi/reactCovid.git/static/js/2.ce5236d9.chunk.js",
+    "static/js/2.ce5236d9.chunk.js.map": "/kmagdi/reactCovid.git/static/js/2.ce5236d9.chunk.js.map",
+    "index.html": "/kmagdi/reactCovid.git/index.html",
+    "precache-manifest.a92bc860c4096874f4a2adba45830b60.js": "/kmagdi/reactCovid.git/precache-manifest.a92bc860c4096874f4a2adba45830b60.js",
+    "service-worker.js": "/kmagdi/reactCovid.git/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/kmagdi/reactCovid.git/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.ce5236d9.chunk.js.LICENSE.txt": "/kmagdi/reactCovid.git/static/js/2.ce5236d9.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/kmagdi/reactCovid.git/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f5467a18.js",
+    "static/js/2.ce5236d9.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.bc460fbc.chunk.js"
+  ]
+}
