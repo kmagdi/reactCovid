@@ -1,0 +1,1 @@
+{"version":3,"sources":["tableStyle.css"],"names":[],"mappings":"AAAA,MAAO,YAAa,CAAE,aAAc,CAAE,iBAAmB,CACzD,SAAU,aAAa,CAAE,UAAU,CAAC,kBAAmB","file":"main.be9475d0.chunk.css","sourcesContent":["tbody {height: 500px; display: block; overflow-y: scroll;}\r\nthead,tr {display:table; width:100%;table-layout:fixed;}       \r\n"]}
