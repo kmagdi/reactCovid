@@ -81,7 +81,7 @@ handleSelect = (val)=> {
     fetch(myTxt)
     .then(response=>response.text())
     .then(text=>{
-      const obj=text.split("\r\n")
+      const obj=text.split("\n")
       const filteredData=obj.filter(str=>str.includes(val))
       console.log(filteredData)
       const splitedObj=filteredData.map(str=>str.split(";"))
