@@ -2,10 +2,12 @@ import React, {Component } from 'react';
 
 
 class Diagram extends Component {
+    
     render() { 
+        const {population,country}=this.props;
         return (
             <div>
-                 {this.props.population===0? "" :this.props.country+" population:"+this.props.population}
+                 {(population===0 || population===null ) ? "" : (country+" population:"+ population)}
             </div>           
           );
     }
