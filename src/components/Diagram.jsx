@@ -2,21 +2,13 @@ import React, {Component } from 'react';
 
 
 class Diagram extends Component {
-    constructor(props){
-        super()
-        this.state={
-            population:0
-        }
-    }
-   
     render() { 
         return (
             <div>
-                 {this.props.country}
-            </div>
-           
+                 {this.props.population===0? "" :this.props.country+" population:"+this.props.population}
+            </div>           
           );
     }
 }
  
-export default Diagram;
+export default Diagram

@@ -5,6 +5,7 @@ import Diagram from "./components/Diagram"
 import Axios from "axios"
 import  "../node_modules/bootstrap/dist/css/bootstrap.css"
 import "./tableStyle.css"
+import myTxt from "./components/population.txt"
 
 class App extends Component {
   constructor(){
@@ -14,7 +15,8 @@ class App extends Component {
        isLoaded:false,
        data:[],
        date:null,
-       selectedOption: null
+       selectedOption: null,
+       population:null
       }
 }
     
@@ -75,6 +77,23 @@ componentDidMount(){
 }
 handleSelect = (val)=> {
   this.setState({selectedOption:val})
+  if(val!=="no selected"){
+    fetch(myTxt)
+    .then(response=>response.text())
+    .then(text=>{
+      const obj=text.split("\r\n")
+      const filteredData=obj.filter(str=>str.includes(val))
+      //console.log(filteredData)
+      const splitedObj=filteredData.map(str=>str.split(";"))
+      this.setState({population:splitedObj[0][1]})
+    })
+  }else
+    this.setState({
+      selectedOption:null,
+      population:0
+    })
+
+  
 }
 
   render() { 
@@ -90,7 +109,7 @@ handleSelect = (val)=> {
                   <Content data={this.state.data} />
               </div>
               <div className="col-sm-5">
-                 <Diagram country={this.state.selectedOption}/>
+                 <Diagram country={this.state.selectedOption} population={this.state.population}/>
               </div>   
         </main>
       </React.Fragment>
