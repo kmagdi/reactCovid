@@ -83,7 +83,7 @@ handleSelect = (val)=> {
     .then(text=>{
       const obj=text.split("\r\n")
       const filteredData=obj.filter(str=>str.includes(val))
-      //console.log(filteredData)
+      console.log(filteredData)
       const splitedObj=filteredData.map(str=>str.split(";"))
       this.setState({population:splitedObj[0][1]})
     })
