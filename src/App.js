@@ -114,7 +114,7 @@ handleSelect = (val)=> {
   render() { 
     console.log(this.state.selectedOption+" render-bol");
     return (
-      <div className="container-sm border shadow">
+      <div className="container border shadow">
         <NavBar text={this.state.isLoaded ? " date: "+this.state.date  : "is loading..." } 
                 data={this.state.data} 
                 onSelected={this.handleSelect}
