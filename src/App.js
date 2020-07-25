@@ -119,17 +119,20 @@ handleSelect = (val)=> {
                 data={this.state.data} 
                 onSelected={this.handleSelect}
                 selectedOption={this.state.selectedOption}/>
-        <main className='row'>
-              <div className="col-sm-7">
-                  <Content data={this.state.data} />
-              </div>
+        <main  className='row'>
+              
               <div className="col-sm-5">
                  <Diagram country={this.state.selectedOption} 
                           population={this.state.population} 
                           data={this.state.data}
                           photoURL={this.state.photoURL}
                           error={this.state.error}/>
-              </div>   
+              </div>  
+
+              <div className="col-sm-7">
+                  <Content data={this.state.data} />
+              </div>
+              
         </main>
       </React.Fragment>
       
