@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/reactCovid/static/css/main.be9475d0.chunk.css",
-    "main.js": "/reactCovid/static/js/main.fd4d6ba2.chunk.js",
-    "main.js.map": "/reactCovid/static/js/main.fd4d6ba2.chunk.js.map",
+    "main.js": "/reactCovid/static/js/main.b7dad578.chunk.js",
+    "main.js.map": "/reactCovid/static/js/main.b7dad578.chunk.js.map",
     "runtime-main.js": "/reactCovid/static/js/runtime-main.61521117.js",
     "runtime-main.js.map": "/reactCovid/static/js/runtime-main.61521117.js.map",
     "static/css/2.829c9cb5.chunk.css": "/reactCovid/static/css/2.829c9cb5.chunk.css",
     "static/js/2.380849fd.chunk.js": "/reactCovid/static/js/2.380849fd.chunk.js",
     "static/js/2.380849fd.chunk.js.map": "/reactCovid/static/js/2.380849fd.chunk.js.map",
     "index.html": "/reactCovid/index.html",
-    "precache-manifest.88bf46258ec0cf8d0e6a7341e5fd4422.js": "/reactCovid/precache-manifest.88bf46258ec0cf8d0e6a7341e5fd4422.js",
+    "precache-manifest.7d901cd8f275aa00b3fc5b470c5ca8e8.js": "/reactCovid/precache-manifest.7d901cd8f275aa00b3fc5b470c5ca8e8.js",
     "service-worker.js": "/reactCovid/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/reactCovid/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.be9475d0.chunk.css.map": "/reactCovid/static/css/main.be9475d0.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.380849fd.chunk.js",
     "static/css/main.be9475d0.chunk.css",
-    "static/js/main.fd4d6ba2.chunk.js"
+    "static/js/main.b7dad578.chunk.js"
   ]
 }
