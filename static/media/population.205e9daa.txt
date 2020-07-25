@@ -1,7 +1,7 @@
 country;population
 China;1439323776
 India;1380004385
-United States;331002651
+US;331002651
 Indonesia;273523615
 Pakistan;220892340
 Brazil;212559417
@@ -51,7 +51,7 @@ Nepal;29136808
 Venezuela;28435940
 Madagascar;27691018
 Cameroon;26545863
-Côte d'Ivoire;26378274
+Cï¿½te d'Ivoire;26378274
 North Korea;25778816
 Australia;25499884
 Niger;24206644
@@ -160,7 +160,7 @@ Cyprus;1207359
 Eswatini;1160164
 Djibouti;988
 Fiji;896445
-Réunion;895312
+Rï¿½union;895312
 Comoros;869601
 Guyana;786552
 Bhutan;771608
@@ -190,7 +190,7 @@ Samoa;198414
 Saint Lucia;183627
 Channel Islands;173863
 Guam;168775
-Curaçao;164093
+Curaï¿½ao;164093
 Kiribati;119449
 Micronesia;115023
 Grenada;112523
