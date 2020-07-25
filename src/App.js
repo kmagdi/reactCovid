@@ -72,7 +72,8 @@ componentDidMount(){
 
             this.setState({
                     isLoaded:true,
-                    data:json.items
+                    data:json.items,
+                    error:null
             })
        })
 }
@@ -81,20 +82,33 @@ handleSelect = (val)=> {
   if(val!=="no selected"){
     fetch(myTxt)
     .then(response=>response.text())
-    .then(text=>{
-      const obj=text.split("\n")
-      const filteredData=obj.filter(str=>str.includes(val))
-      console.log(filteredData)
-      const splitedObj=filteredData.map(str=>str.split(";"))
-      this.setState({population:splitedObj[0][1]})
-    })
+    .then(
+      (text)=>{
+        const obj=text.split("\n")
+        const filteredData=obj.filter(str=>str.includes(val))
+        console.log("filteredData="+filteredData.length)
+        if(filteredData.length===0) {
+          console.log("orszag kodozasi hiba");
+          this.setState({population:0,
+                         error:"orszag kodolasi hiba :(" 
+          })
+        }else{
+          const splitedObj=filteredData.map(str=>str.split(";"))
+          this.setState({population:splitedObj[0][1]})
+        }},
+      (error)=>{
+        this.setState({
+          selectedOption:null,
+          population:0
+        })
+      }
+      )
   }else
     this.setState({
       selectedOption:null,
-      population:0
+      population:0,
+      error:null
     })
-
-  
 }
 
   render() { 
@@ -110,7 +124,11 @@ handleSelect = (val)=> {
                   <Content data={this.state.data} />
               </div>
               <div className="col-sm-5">
-                 <Diagram country={this.state.selectedOption} population={this.state.population} photoURL={this.state.photoURL}/>
+                 <Diagram country={this.state.selectedOption} 
+                          population={this.state.population} 
+                          data={this.state.data}
+                          photoURL={this.state.photoURL}
+                          error={this.state.error}/>
               </div>   
         </main>
       </React.Fragment>
