@@ -114,7 +114,7 @@ handleSelect = (val)=> {
   render() { 
     console.log(this.state.selectedOption+" render-bol");
     return (
-      <React.Fragment>
+      <div className="container-sm border shadow">
         <NavBar text={this.state.isLoaded ? " date: "+this.state.date  : "is loading..." } 
                 data={this.state.data} 
                 onSelected={this.handleSelect}
@@ -132,9 +132,9 @@ handleSelect = (val)=> {
               <div className="col-sm-7">
                   <Content data={this.state.data} />
               </div>
-              
+
         </main>
-      </React.Fragment>
+      </div>
       
       );
   }
