@@ -16,7 +16,8 @@ class App extends Component {
        data:[],
        date:null,
        selectedOption: null,
-       population:null
+       population:null,
+       photoURL:"https://picsum.photos/500"
       }
 }
     
@@ -109,7 +110,7 @@ handleSelect = (val)=> {
                   <Content data={this.state.data} />
               </div>
               <div className="col-sm-5">
-                 <Diagram country={this.state.selectedOption} population={this.state.population}/>
+                 <Diagram country={this.state.selectedOption} population={this.state.population} photoURL={this.state.photoURL}/>
               </div>   
         </main>
       </React.Fragment>
