@@ -8,8 +8,7 @@ class Diagram extends Component {
             <div className="text-center">
                 <img style={{maxWidth: "100%" , height: "auto" }} className="img-fluid p-2 m-2" src={this.props.photoURL} alt="random photo"/>
             </div>
-        )
-            
+        )          
     }
     confirmed(){
         const filteredData=this.props.data.filter((obj)=>obj.country===this.props.country)
